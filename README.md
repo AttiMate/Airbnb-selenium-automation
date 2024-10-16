@@ -47,22 +47,21 @@ Airbnb Selenium Automation
         
    2. Install project dependencies by running (open a terminal or command prompt in the root of the project directory):
 
-         ```
-         mvn clean install
-
+        ```
+        mvn clean install
 
   5. Code Formatting
        
-      The project uses the Spotless Maven Plugin to ensure consistent code formatting. The configuration applies Google Java Format standards automatically during the build process.
+     The project uses the Spotless Maven Plugin to ensure consistent code formatting. The configuration applies Google Java Format standards automatically during the build process.
+     
+     Spotless is also configured to apply formatting automatically as part of the build process, ensuring that all code adheres to the defined standards.
 
-      You can run the formatter manually by executing:
+     You can run the formatter manually by executing:
 
-         ```
-         mvn spotless:apply
-
-      Spotless is also configured to apply formatting automatically as part of the build process, ensuring that all code adheres to the defined standards.
-
-  6. Running the Tests
+        ```
+        mvn spotless:apply
+   
+  7. Running the Tests
      1. From Command Line
     
         Run the tests from the command line using Maven. In the project directory, run:
@@ -74,15 +73,15 @@ Airbnb Selenium Automation
     
         Alternatively, run the tests directly from your IDE:
 
-        1. Open the project in your IDE.
-        2. Navigate to the TestRunner.java class in the runners package.
-        3. Right-click the class and select Run.
+        - Open the project in your IDE.
+        - Navigate to the TestRunner.java class in the runners package.
+        - Right-click the class and select Run.
        
      3. Test Output
     
         Test results will be displayed in the console, and an HTML report will be generated in target/cucumber-reports.html.
         
-   7. Usage
+   8. Usage
 
       - The feature files in src/test/resources/features define the test scenarios.
         
